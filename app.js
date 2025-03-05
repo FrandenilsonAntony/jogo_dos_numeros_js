@@ -33,7 +33,7 @@ function verificarChute() {
     
     if (chute == numeroSecreto) {
         exibirTextoTela('h1', 'Acertou!');
-        let palavraTentativa = tentativas > 1 ? 'tentivas' : 'tentativa';
+        let palavraTentativa = tentativas > 1 ? 'tentativas' : 'tentativa';
         let mensagemTentativas = `Você descobriu o número secreto com ${tentativas} ${palavraTentativa}!`;
         exibirTextoTela('p', mensagemTentativas);
         document.getElementById('reiniciar').removeAttribute('disabled');
